@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="./reset.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Sam's Weather</title>
+</head>
+<body>
+    <!-- my header -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand"><h1>Sam's Weather App</h1></a>
+        <form class="form-inline">
+        <!-- this is the city input for the search, ID = userInput -->
+          <input class="form-control mr-sm-2" id="userInput" type="search" placeholder="Enter a city or zip" aria-label="Search">
+        <!-- this is the submit button, ID = bigSubmit -->
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="bigSubmit">Get Weather</button>
+        </form>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+            <!-- this is the column for the sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky pt-3">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Recent Searches</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                        <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>  
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Sample City
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <!-- this column holds the entire search results -->
+            <div class="col">
+                <!-- this is the results header -->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                </div>
+                <!-- this is the card for the current weather -->
+                <div class="card">
+                    <div class="card-body" id="currentConditions">
+                    Search for a city to see the current weather conditions.
+                    </div>
+                </div>
+                <br>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body" id="day1">
+                          <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" id="day2">
+                          <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" id="day3">
+                          <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" id="day4">
+                          <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" id="day5">
+                          <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        <footer>
+            Footer will go here
+        </footer>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- js -->
+<script src="./script.js"></script>    
+</body>
+</html>
