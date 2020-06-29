@@ -35,25 +35,29 @@
                         </a>
                     </h6>  
                 <ul class="nav flex-column">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Sample City
-                    </a>
+                    <li class="nav-item searchHistory">
                     </li>
                 </ul>
                 </div>
             </nav>
             <!-- this column holds the entire search results -->
             <div class="col">
-                <!-- this is the results header -->
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Dashboard</h1>
-                </div>
                 <!-- this is the card for the current weather -->
-                <div class="card">
-                    <div class="card-body" id="currentConditions">
-                    Search for a city to see the current weather conditions.
+                <br>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/810/f/weather.jpg" class="card-img" id="currentIcon" alt="icon">
                     </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" id="currentTitle"></h5>
+                        <div id="currentConditions">
+                          <p class="card-text">Search for a city to see the current weather conditions.</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <br>
                 <div class="card-group">
@@ -83,10 +87,11 @@
                         </div>
                     </div>
                 </div>
+                <br>
             </div>  
-        <footer>
+        <!-- <footer>
             Footer will go here
-        </footer>
+        </footer> -->
 
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
